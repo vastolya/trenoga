@@ -9,6 +9,8 @@ export default function Scene() {
 
  useEffect(() => {
   const host = root.current!;
+  // Touch devices keep the CSS backdrop without allocating a fullscreen GPU surface.
+  if (matchMedia('(hover: none) and (pointer: coarse)').matches) return;
   let renderer: THREE.WebGLRenderer;
   try { renderer = new THREE.WebGLRenderer({ alpha: false, antialias: false }); }
   catch { return; }
@@ -81,6 +83,15 @@ export default function Scene() {
   const pointer = new THREE.Vector2(.5, .5);
   const heroTitle = document.querySelector<HTMLElement>('.hero h1');
   let focus = 0, frame = 0, previousScroll = window.scrollY;
+  let contextLost = false, needsReady = false;
+  const loseContext = (event: Event) => {
+   event.preventDefault();
+   contextLost = true;
+   setReady(false);
+  };
+  const restoreContext = () => { contextLost = false; needsReady = true; };
+  renderer.domElement.addEventListener('webglcontextlost', loseContext);
+  renderer.domElement.addEventListener('webglcontextrestored', restoreContext);
   let elapsed = 0, lastPaint = -100;
   const journey = () => {
    const maxScroll = Math.max(0, document.documentElement.scrollHeight-innerHeight);
@@ -107,7 +118,7 @@ export default function Scene() {
   document.addEventListener('focusout', focusOut);
   const animate = (time: number) => {
    frame = requestAnimationFrame(animate);
-   if (document.hidden || time-lastPaint < 1000/30) return;
+   if (contextLost || document.hidden || time-lastPaint < 1000/30) return;
    const dt = Math.min((time-lastPaint)*.001, .05);
    lastPaint = time;
    const scroll = window.scrollY;
@@ -129,16 +140,22 @@ export default function Scene() {
    }
    previousScroll = scroll;
    renderer.render(scene, camera);
+   if (needsReady && !renderer.getContext().isContextLost()) {
+    needsReady = false;
+    setReady(true);
+   }
   };
   // Match direct anchor visits and restored scroll positions before the first paint.
   const initial = journey();
   uniforms.uJourney.value = initial.progress;
   uniforms.uReturn.value = initial.returnStrength;
   renderer.render(scene, camera);
-  setReady(true);
+  setReady(!renderer.getContext().isContextLost());
   frame = requestAnimationFrame(animate);
   return () => {
    cancelAnimationFrame(frame); observer.disconnect();
+   renderer.domElement.removeEventListener('webglcontextlost', loseContext);
+   renderer.domElement.removeEventListener('webglcontextrestored', restoreContext);
    window.removeEventListener('pointermove', move); window.removeEventListener('pointerdown', press);
    document.documentElement.removeEventListener('pointerleave', leave);
    document.removeEventListener('focusin', focusIn); document.removeEventListener('focusout', focusOut);
