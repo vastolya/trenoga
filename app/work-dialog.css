@@ -1,0 +1,15 @@
+.work-dialog{padding:52px 30px 24px;overflow:hidden}
+.work-gallery{height:100%;display:grid;grid-template-rows:minmax(0,1fr) auto;gap:20px}
+.work-gallery.has-thumbnails{grid-template-rows:minmax(0,1fr) auto auto}
+.work-gallery-image{min-width:0;min-height:0;display:flex;align-items:center;justify-content:center}
+.work-gallery-image>img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.work-thumbnails{position:relative;display:flex;align-items:center;justify-content:flex-start;gap:14px;overflow-x:auto;padding:5px 4px 9px;max-width:100%;margin:0 auto;scrollbar-width:thin;scrollbar-color:#a57958 transparent}
+.work-thumbnails>button{display:block;flex:0 0 100px;width:100px;height:72px;border:0;padding:0;background:transparent;opacity:.48;transition:opacity .2s;outline-offset:3px}
+.work-thumbnails>button>img{display:block;width:100%;height:100%;object-fit:cover}
+.work-thumbnails>button:hover,.work-thumbnails>button:focus-visible{opacity:1}
+.work-thumbnails>button[aria-pressed='true']{opacity:1;outline:1px solid #9d5731}
+.work-gallery-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.work-gallery-caption{min-width:0}.work-gallery-caption h3{margin:0;font-size:20px;font-weight:500;letter-spacing:-.5px}.work-gallery-caption p{margin:8px 0 0;font-size:12px;line-height:1.6;color:#594a3b}
+.work-gallery-controls{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.work-gallery-controls>button{display:grid;place-items:center;width:44px;height:44px;border:0;background:none;font-size:27px;transition:color .2s}.work-gallery-controls>button:hover{color:#a34e2d}.work-gallery-controls>span{font-size:12px;min-width:35px;text-align:center;color:#65472f}
+@media(max-width:520px){.work-dialog{padding:52px 16px 20px}.work-gallery{gap:15px}.work-thumbnails{gap:10px}.work-thumbnails>button{flex-basis:76px;width:76px;height:58px}.work-gallery-bottom{gap:12px;align-items:flex-start}.work-gallery-caption h3{font-size:17px}.work-gallery-caption p{font-size:10px}.work-gallery-controls{gap:3px}.work-gallery-controls>button{width:34px;height:38px;font-size:23px}.work-gallery-controls>span{font-size:11px;min-width:30px}}

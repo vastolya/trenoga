@@ -1,0 +1,292 @@
+[
+  {
+    "name": "2018-2021",
+    "description": "разноцветная и чёрно-белая графика, аппликация, изображения человеческих лиц в искажённой форме, зарисовки людей с закрытыми глазами и с натуры, выдуманные герои",
+    "images": [
+      {
+        "id": "g0-00",
+        "file": "Бар Фабрика, 2021.jpg",
+        "src": "/art/chronology/g0-00.webp",
+        "width": 2400,
+        "height": 1659
+      },
+      {
+        "id": "g0-01",
+        "file": "в мастреской.jpg",
+        "src": "/art/chronology/g0-01.webp",
+        "width": 2400,
+        "height": 1744
+      },
+      {
+        "id": "g0-02",
+        "file": "Вопрос стоит остро.jpg",
+        "src": "/art/chronology/g0-02.webp",
+        "width": 1576,
+        "height": 2200
+      },
+      {
+        "id": "g0-03",
+        "file": "Лица 1.jpg",
+        "src": "/art/chronology/g0-03.webp",
+        "width": 2400,
+        "height": 1746
+      },
+      {
+        "id": "g0-04",
+        "file": "Лица 2, 2019.jpg",
+        "src": "/art/chronology/g0-04.webp",
+        "width": 1565,
+        "height": 2200
+      },
+      {
+        "id": "g0-05",
+        "file": "Портрет Владимира Казака, Фабрика, 2021.jpg",
+        "src": "/art/chronology/g0-05.webp",
+        "width": 2400,
+        "height": 1620
+      },
+      {
+        "id": "g0-06",
+        "file": "приятель ворует.jpg",
+        "src": "/art/chronology/g0-06.webp",
+        "width": 2400,
+        "height": 1792
+      },
+      {
+        "id": "g0-07",
+        "file": "приятель уходит.jpg",
+        "src": "/art/chronology/g0-07.webp",
+        "width": 2400,
+        "height": 1784
+      },
+      {
+        "id": "g0-08",
+        "file": "ученик.jpg",
+        "src": "/art/chronology/g0-08.webp",
+        "width": 741,
+        "height": 960
+      }
+    ]
+  },
+  {
+    "name": "2021-2024 линогравюра",
+    "description": "чёрно-белая печатная графика с изображениями лиц, абстрактных форм и сказочных персонажей",
+    "images": [
+      {
+        "id": "g1-00",
+        "file": "Безопасное место, линогравюра, 2023.jpg",
+        "src": "/art/chronology/g1-00.webp",
+        "width": 1691,
+        "height": 2200
+      },
+      {
+        "id": "g1-01",
+        "file": "Колдун, линогравюра, 2022, 14х21 см.jpg",
+        "src": "/art/chronology/g1-01.webp",
+        "width": 1546,
+        "height": 2200
+      },
+      {
+        "id": "g1-02",
+        "file": "Колобок, линогравюра, 2024, 10х15 см.jpg",
+        "src": "/art/chronology/g1-02.webp",
+        "width": 2400,
+        "height": 1784
+      },
+      {
+        "id": "g1-03",
+        "file": "Мама, линогравюра, 2022.jpg",
+        "src": "/art/chronology/g1-03.webp",
+        "width": 1571,
+        "height": 2200
+      },
+      {
+        "id": "g1-04",
+        "file": "Ничего лишнего, 2022.jpg",
+        "src": "/art/chronology/g1-04.webp",
+        "width": 2400,
+        "height": 1697
+      },
+      {
+        "id": "g1-05",
+        "file": "Нота, линогравюра, 2024, 10х15 см.jpg",
+        "src": "/art/chronology/g1-05.webp",
+        "width": 1550,
+        "height": 2200
+      },
+      {
+        "id": "g1-06",
+        "file": "Перерыв, линогравюра, 2024, 14х21 см.jpg",
+        "src": "/art/chronology/g1-06.webp",
+        "width": 1555,
+        "height": 2200
+      },
+      {
+        "id": "g1-07",
+        "file": "Сижу, курю, линогравюра, 2021.jpg",
+        "src": "/art/chronology/g1-07.webp",
+        "width": 2400,
+        "height": 1895
+      },
+      {
+        "id": "g1-08",
+        "file": "Смерть колобка, линогравюра, 2024, 14х21 см ..jpg",
+        "src": "/art/chronology/g1-08.webp",
+        "width": 2400,
+        "height": 1697
+      },
+      {
+        "id": "g1-09",
+        "file": "У костра, линогравюра, 2023.jpg",
+        "src": "/art/chronology/g1-09.webp",
+        "width": 1532,
+        "height": 2200
+      },
+      {
+        "id": "g1-10",
+        "file": "Усталость, линогравюра, 2022.jpg",
+        "src": "/art/chronology/g1-10.webp",
+        "width": 1532,
+        "height": 2200
+      }
+    ]
+  },
+  {
+    "name": "2021-2024 улица",
+    "description": "уличные работы, выполненные в период с 2021 по 2024 год на домах, стенах, заброшенных зданиях. на рисунках изображены искажённые лица и абстрактные композиции",
+    "images": [
+      {
+        "id": "g2-00",
+        "file": "3a7c256e-4565-4a41-b30a-ea1e75c569db.jpg",
+        "src": "/art/chronology/g2-00.webp",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "id": "g2-01",
+        "file": "7d584a73-1485-4259-b3e0-963dd106b416.jpg",
+        "src": "/art/chronology/g2-01.webp",
+        "width": 673,
+        "height": 1016
+      },
+      {
+        "id": "g2-02",
+        "file": "958f68cf-a190-4fb5-aac0-01357abd89ff.jpg",
+        "src": "/art/chronology/g2-02.webp",
+        "width": 743,
+        "height": 1118
+      },
+      {
+        "id": "g2-03",
+        "file": "Ничего лишнего, фасадная краска.jpg",
+        "src": "/art/chronology/g2-03.webp",
+        "width": 553,
+        "height": 795
+      },
+      {
+        "id": "g2-04",
+        "file": "Оберег Чертополох ...jpg",
+        "src": "/art/chronology/g2-04.webp",
+        "width": 1365,
+        "height": 2048
+      },
+      {
+        "id": "g2-05",
+        "file": "Оберег Чертополох ..jpg",
+        "src": "/art/chronology/g2-05.webp",
+        "width": 2016,
+        "height": 1365
+      },
+      {
+        "id": "g2-06",
+        "file": "Оберег Чертополох, 2023, фасадная краска, 12х15 м.jpg",
+        "src": "/art/chronology/g2-06.webp",
+        "width": 865,
+        "height": 1280
+      },
+      {
+        "id": "g2-07",
+        "file": "Очень быстро едем вперёд, фасадная краска, аэрозоль, 2024, 230х360 см.webp",
+        "src": "/art/chronology/g2-07.webp",
+        "width": 1125,
+        "height": 749
+      },
+      {
+        "id": "g2-08",
+        "file": "Спячка, 2024.jpg",
+        "src": "/art/chronology/g2-08.webp",
+        "width": 1084,
+        "height": 1365
+      },
+      {
+        "id": "g2-09",
+        "file": "b63d0844-8613-46f2-8888-479e0d766fb8.jpg",
+        "src": "/art/chronology/g2-09.webp",
+        "width": 750,
+        "height": 497
+      },
+      {
+        "id": "g2-10",
+        "file": "R1-03139-0025.JPG",
+        "src": "/art/chronology/g2-10.webp",
+        "width": 1489,
+        "height": 2200
+      },
+      {
+        "id": "g2-11",
+        "file": "R1-03139-0026.JPG",
+        "src": "/art/chronology/g2-11.webp",
+        "width": 1489,
+        "height": 2200
+      }
+    ]
+  },
+  {
+    "name": "2025",
+    "description": "большая чёрно-белая фреска с лаконичными формами и рваными линиями в музее о надежде и неопределённости, нарисованная для биеннале в 2025 году",
+    "images": [
+      {
+        "id": "g3-00",
+        "file": "IMG_8061.webp",
+        "src": "/art/chronology/g3-00.webp",
+        "width": 1125,
+        "height": 749
+      },
+      {
+        "id": "g3-01",
+        "file": "IMG_8062.webp",
+        "src": "/art/chronology/g3-01.webp",
+        "width": 1125,
+        "height": 749
+      },
+      {
+        "id": "g3-02",
+        "file": "IMG_8063.webp",
+        "src": "/art/chronology/g3-02.webp",
+        "width": 1125,
+        "height": 749
+      },
+      {
+        "id": "g3-03",
+        "file": "IMG_8064.webp",
+        "src": "/art/chronology/g3-03.webp",
+        "width": 1125,
+        "height": 749
+      },
+      {
+        "id": "g3-04",
+        "file": "IMG_8066.webp",
+        "src": "/art/chronology/g3-04.webp",
+        "width": 1125,
+        "height": 749
+      },
+      {
+        "id": "g3-05",
+        "file": "IMG_9526.webp",
+        "src": "/art/chronology/g3-05.webp",
+        "width": 1125,
+        "height": 749
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+/* A single fixed world under the entire archive. No section-owned backgrounds. */
+body{background:var(--paper);isolation:isolate}
+.immersive-backdrop{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:#e8e5dd}
+.immersive-backdrop canvas{display:block;width:100%;height:100%}
+.ambient-fallback{position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 80% 50%,#41302135,transparent 70%),radial-gradient(ellipse at 10% 80%,#a86c4633,transparent 65%),#e8e5dd;transition:opacity 1s}
+.ambient-fallback.loaded{opacity:0}
+.immersive-backdrop:after{content:'';position:absolute;inset:0;z-index:2;background-image:url('/wear.svg'),url('/grain.svg');background-size:900px 1100px,150px 150px;opacity:.13;mix-blend-mode:multiply;pointer-events:none}
+.hero,.archive,.story,.about,.archive-footer{background:transparent;isolation:auto}
+.hero:before,.hero:after,.archive:before,.story:before,.story:after,.about-photo:before,.archive-footer:before,.archive-footer:after{display:none}
+.hero{overflow:visible}
+.archive{padding-top:35px}
+.story{color:var(--ink);padding-top:100px;padding-bottom:120px;overflow:visible}
+.story .section-top,.story-art>span{color:#65584b}
+.story-copy>p,.story .full-text{color:#53483d}
+.story-copy blockquote{color:#221b15}
+.story details{border-color:#96806a}
+.series-works span{color:#5b4838}
+.series-works button>span{border-color:#8d817363;color:#5b4838}
+.about{padding-top:100px;padding-bottom:100px}
+.archive-footer{min-height:340px;padding-top:115px;padding-bottom:115px;overflow:visible}
+.footer-identity,.footer-contacts{color:#241b14;mix-blend-mode:normal}
+.footer-identity small{color:#70513d}
+.footer-contacts{font-family:'Golos Text',Arial,sans-serif;font-size:17px;font-weight:500;letter-spacing:-.04em}
+.footer-contacts a{color:inherit;text-decoration:none;transition:color .25s}
+.footer-contacts a:hover{color:var(--accent)}
+.archive-footer .reactive-type-fill{color:inherit;mix-blend-mode:normal}
+.archive-footer .reactive-type-edge{display:none}
+.about .section-top,.about-copy>.text-link,.about-photo>span{color:#fff;mix-blend-mode:difference}
+
+/* Restore the live textured fill. A fine, separate edge protects midtone contrast. */
+header,.hero .eyebrow,.hero-note,.hero-bottom{color:#fff;mix-blend-mode:difference;text-shadow:none}
+.hero h1,.about-copy>h2,.about-copy>p{color:inherit;mix-blend-mode:normal;text-shadow:none}
+.hero h1{font-weight:600}
+.hero h1{letter-spacing:-.095em;font-kerning:none;font-feature-settings:"kern" 0}
+.reactive-type{display:inline-grid;grid-template-columns:minmax(0,1fr);vertical-align:top;max-width:100%;white-space:pre-line;text-shadow:none;letter-spacing:inherit;line-height:inherit}
+.reactive-type-fill,.reactive-type-edge{grid-area:1/1;min-width:0;font:inherit;letter-spacing:inherit;line-height:inherit}
+.reactive-type-fill{color:#fff;mix-blend-mode:difference}
+.reactive-type-edge{color:transparent;-webkit-text-stroke:.4px #21170de0;pointer-events:none;user-select:none;mix-blend-mode:normal}
+.hero h1 .reactive-type-edge{-webkit-text-stroke:0;visibility:hidden}
+.hero h1 .reactive-type-patina{-webkit-text-stroke:0;text-shadow:none;filter:none}
+.hero h1 .reactive-type-line{display:block}
+.hero h1 .reactive-type-line:first-child{margin-left:-.058em}
+/* Tight tracking lets the final glyph extend past its advance width.
+   Expand every paint layer equally without changing the text's layout. */
+.reactive-type-textured>.reactive-type-fill,
+.reactive-type-textured>.reactive-type-patina,
+.reactive-type-textured>.reactive-type-edge{padding:.16em .18em;margin:-.16em -.18em;overflow:visible}
+.reactive-type-textured .reactive-type-fill{color:transparent;background-image:url('/grain.svg'),linear-gradient(115deg,#fff 4%,#e0e0e0 22%,#fff 40%,#a7a7a7 61%,#f5f5f5 79%,#fff);background-size:110px 110px,100% 100%;background-blend-mode:soft-light,normal;background-clip:text;-webkit-background-clip:text}
+.reactive-type-patina{grid-area:1/1;min-width:0;font:inherit;letter-spacing:inherit;line-height:inherit;color:transparent;pointer-events:none;user-select:none;background-color:#a56540;background-image:url('/wear.svg'),url('/grain.svg'),radial-gradient(ellipse at var(--type-x,50%) var(--type-y,50%),#e5b485 0%,#b56b3f 24%,#8d4324 48%,#78482e 70%,#aa714c 100%);background-size:700px 850px,95px 95px,100% 100%;background-blend-mode:soft-light,soft-light,normal;background-clip:text;-webkit-background-clip:text;mix-blend-mode:multiply;opacity:1}
+.piece-caption p,.piece-category,.story .section-top,.story-art>span,
+.story-copy>p,.story .full-text,.series-works button>span{color:#30271f;font-weight:500}
+.piece-caption p{font-size:12px}.piece-category{font-size:10px}
+.small-label,.eyebrow,.section-top .small-label{font-size:11px;letter-spacing:.8px}
+.hero .eyebrow{font-size:10px}.hero-note{font-size:13px}.hero-note span{font-size:11px}
+.footer-contacts{font-size:14px}.footer-identity small{font-size:11px}
+.about-copy>p,.story-copy>p{line-height:1.85}
+.about-grid{display:block;position:relative;margin-top:0}
+.about-photo{padding-top:0}
+.about .about-photo{width:100%}
+.about .about-photo>img{display:block;width:100%;height:clamp(560px,78svh,950px);object-fit:cover;object-position:45% 35%}
+.about-portfolio{position:absolute;right:4%;bottom:5%;display:block;width:56px;height:64px;cursor:pointer;background:none;border:0;box-shadow:none;line-height:0}
+.about-portfolio .copper-tear{width:56px;height:64px}
+.about-portfolio .tear-fallback{inset:6px 10px;width:36px;height:50px}
+@media(max-width:800px){.about-portfolio{right:3%}}
+@media(max-width:520px){.about .about-photo>img{height:560px;object-position:43% 35%}.about-portfolio{right:4%;bottom:24px;width:48px;height:58px}.about-portfolio .copper-tear{width:48px;height:58px}}
+.about-copy{position:relative}
+/* A diffuse patch of paper protects this reading area without a panel edge. */
+.about-copy:before{content:'';position:absolute;inset:-55px -40px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 40% 45%,#e8e5ddeb 0%,#e8e5ddc9 40%,#e8e5dd55 65%,transparent 85%);filter:blur(30px)}
+.about-copy>p{max-width:38ch;font-size:16px;font-weight:400;line-height:1.8;color:#211b15;mix-blend-mode:normal}
+.about-copy>.text-link{color:#211b15;mix-blend-mode:normal;font-size:14px;border-color:#78614b}
+@media(max-width:520px){.archive{padding-top:15px}.story{padding-top:60px;padding-bottom:65px}.about{padding-top:65px;padding-bottom:50px}.archive-footer{min-height:280px;padding-top:65px;padding-bottom:65px;justify-content:center;gap:30px}}
+@media(prefers-reduced-motion:reduce){.ambient-fallback{transition:none}}

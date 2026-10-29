@@ -1,0 +1,13 @@
+/* Same heading and description typography as every archive chapter. */
+.chapter-heading .exhibition-kind{margin:14px 0 0;font-size:14px;line-height:1.5;color:#92512f}
+.chapter-heading .exhibition-essay{max-width:48ch;margin:25px 0 0;padding:0;color:#493b2d}
+.chapter-heading .exhibition-essay p{max-width:none;margin:0;font-size:13px;font-weight:400;line-height:1.8;letter-spacing:0;text-wrap:pretty}
+.chapter-heading .exhibition-essay p+p{margin-top:20px}
+.exhibition-essay{cursor:zoom-in}
+.exhibition-essay[data-expanded='true']{cursor:zoom-out}
+.exhibition-essay:focus-visible{outline:1px solid #92512f;outline-offset:8px}
+.exhibition-text-viewport{overflow:hidden;transition:height .65s cubic-bezier(.22,.7,.2,1)}
+.story>.series-works{margin-top:0}
+@media(max-width:900px){.chapter-heading .exhibition-essay p{font-size:12px}}
+@media(max-width:520px){.chapter-heading .exhibition-essay{margin-top:18px}.chapter-heading .exhibition-essay p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.exhibition-text-viewport{transition:none}}
