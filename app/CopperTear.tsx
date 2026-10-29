@@ -46,8 +46,6 @@ export default function CopperTear({idle=false}:{idle?:boolean}){
  const [ready,setReady]=useState(false);
  useEffect(()=>{
   const host=root.current!;
-  // Use the existing SVG on touch devices instead of two extra WebGL contexts.
-  if(matchMedia('(hover: none) and (pointer: coarse)').matches)return;
   let renderer:THREE.WebGLRenderer;
   try{renderer=new THREE.WebGLRenderer({alpha:true,antialias:true})}catch{return}
   renderer.setPixelRatio(Math.min(devicePixelRatio,2));

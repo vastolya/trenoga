@@ -2,7 +2,7 @@
 body{background:var(--paper);isolation:isolate}
 .immersive-backdrop{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:#e8e5dd}
 .immersive-backdrop canvas{display:block;width:100%;height:100%}
-@media(max-width:768px){.immersive-backdrop{inset:0 0 auto;width:100%;height:100vh;height:100lvh}}
+@media(max-width:768px){.immersive-backdrop{inset:0 0 auto;width:100vw;height:100vh;height:100lvh;transform:translate3d(0,0,0);backface-visibility:hidden}.immersive-backdrop canvas{backface-visibility:hidden}}
 .ambient-fallback{position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at 80% 50%,#41302135,transparent 70%),radial-gradient(ellipse at 10% 80%,#a86c4633,transparent 65%),#e8e5dd;transition:opacity 1s}
 .ambient-fallback.loaded{opacity:0}
 .immersive-backdrop:after{content:'';position:absolute;inset:0;z-index:2;background-image:url('/wear.svg'),url('/grain.svg');background-size:900px 1100px,150px 150px;opacity:.13;mix-blend-mode:multiply;pointer-events:none}
