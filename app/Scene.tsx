@@ -12,7 +12,7 @@ export default function Scene() {
   let renderer: THREE.WebGLRenderer;
   try { renderer = new THREE.WebGLRenderer({ alpha: false, antialias: false }); }
   catch { return; }
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.25));
+  renderer.setPixelRatio(Math.min(devicePixelRatio, matchMedia('(max-width: 768px)').matches ? 1 : 1.25));
   host.appendChild(renderer.domElement);
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const scene = new THREE.Scene();
